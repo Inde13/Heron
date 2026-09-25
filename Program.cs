@@ -24,6 +24,6 @@ Console.WriteLine("\n-= Resultado =-\n");
 Console.Write("Área do triângulo: ");
 
 Console.ForegroundColor = ConsoleColor.Cyan;
-Console.WriteLine($"{area}cm");
+Console.WriteLine($"{area:N2}cm");
 
 Console.ResetColor();
