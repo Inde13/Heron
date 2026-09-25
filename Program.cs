@@ -4,7 +4,7 @@ double ladoA, ladoB, ladoC, s, area; // s = semiperímetro
 
 Console.WriteLine("-= Calculadora de Heron =-\n");
 
-Console.WriteLine("Insira as medidas do triângulo (em centímetros):");
+Console.WriteLine("Insira as medidas do triângulo:");
 
 Console.Write("Lado A: ");
 ladoA = Convert.ToDouble(Console.ReadLine());
@@ -21,9 +21,14 @@ area = Math.Sqrt(s * (s - ladoA) * (s - ladoB) * (s - ladoC));
 
 Console.WriteLine("\n-= Resultado =-\n");
 
-Console.Write("Área do triângulo: ");
-
+Console.Write("Semiperímetro: ");
 Console.ForegroundColor = ConsoleColor.Cyan;
-Console.WriteLine($"{area:N2}cm");
+Console.WriteLine($"{s:N2}");
+
+Console.ResetColor();
+
+Console.Write("Área do triângulo: ");
+Console.ForegroundColor = ConsoleColor.Cyan;
+Console.WriteLine($"{area:N2}");
 
 Console.ResetColor();
